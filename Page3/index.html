@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="ثبت نام در فروشگاه بازی های فکری فمیلی برد">
+  <title>ثبت‌نام | فمیلی بُرد</title>
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page">
+
+  <!-- Shared Header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+
+      <a class="site-header__brand"
+         href="../Page1/index.html">
+        فمیلی بُرد
+      </a>
+
+      <nav class="site-header__nav"
+           aria-label="منوی اصلی">
+        <a class="site-header__link"
+           href="../Page1/index.html">
+          خانه
+        </a>
+
+        <a class="site-header__link"
+           href="../Page1/index.html">
+          فروشگاه
+        </a>
+
+        <a class="site-header__link"
+           href="../Page1/index.html#categories">
+          دسته‌بندی‌ها
+        </a>
+
+        <a class="site-header__link"
+           href="#about">
+          درباره ما
+        </a>
+      </nav>
+
+      <div class="site-header__actions">
+
+        <a class="site-header__login"
+           href="index.html"
+           aria-current="page">
+          ورود
+        </a>
+
+        <a class="site-header__cart"
+           href="index.html">
+          <svg class="site-header__cart-icon"
+               viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="1.8"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               aria-hidden="true">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6">
+            </path>
+          </svg>
+          سبد خرید (۰)
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Registration Page -->
+  <main class="main register-main">
+
+    <section class="register-card"
+             aria-labelledby="register-title">
+
+      <header class="register-card__header">
+        <h1 class="register-card__title"
+            id="register-title">
+          ساخت حساب کاربری
+        </h1>
+
+        <p class="register-card__description">
+          برای خرید سریع‌تر، حساب فمیلی بُرد خود را بسازید.
+        </p>
+      </header>
+
+      <form class="register-form"
+            action=""
+            method="post">
+
+        <!-- Email -->
+        <div class="register-form__field">
+          <label class="register-form__label"
+                 for="register-email">
+            ایمیل
+          </label>
+
+          <input
+            class="register-form__input"
+            type="email"
+            id="register-email"
+            name="email"
+            placeholder="name@example.com"
+            autocomplete="email"
+            dir="ltr"
+            required>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="register-form__field">
+          <label class="register-form__label"
+                 for="register-phone">
+            شماره همراه
+          </label>
+
+          <input
+            class="register-form__input"
+            type="tel"
+            id="register-phone"
+            name="phone"
+            placeholder="09123456789"
+            inputmode="numeric"
+            autocomplete="tel"
+            dir="ltr"
+            pattern="09[0-9]{9}"
+            minlength="11"
+            maxlength="11"
+            title="شماره همراه باید با 09 شروع شود و 11 رقم داشته باشد."
+            required>
+        </div>
+
+        <!-- Password -->
+        <div class="register-form__field">
+          <label class="register-form__label"
+                 for="register-password">
+            رمز عبور
+          </label>
+
+          <input
+            class="register-form__input"
+            type="password"
+            id="register-password"
+            name="password"
+            placeholder="حداقل ۸ کاراکتر"
+            autocomplete="new-password"
+            minlength="8"
+            maxlength="64"
+            required>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="register-form__field">
+          <label class="register-form__label"
+                 for="register-confirm">
+            تکرار رمز عبور
+          </label>
+
+          <input
+            class="register-form__input"
+            type="password"
+            id="register-confirm"
+            name="confirm_password"
+            placeholder="رمز عبور را دوباره وارد کنید"
+            autocomplete="new-password"
+            minlength="8"
+            maxlength="64"
+            required>
+        </div>
+
+        <!-- Buttons -->
+        <div class="register-form__actions">
+
+          <button class="register-form__button
+                         register-form__button--submit"
+                  type="submit">
+            ثبت‌نام
+          </button>
+
+          <button class="register-form__button
+                         register-form__button--reset"
+                  type="reset">
+            پاک کردن
+          </button>
+
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer" id="about">
+    <div class="container site-footer__inner">
+
+      <p class="site-footer__text">
+        فمیلی بُرد؛ هر بازی، یک دورهمی تازه!
+      </p>
+
+      <nav class="site-footer__links"
+           aria-label="لینک‌های فوتر">
+        <a class="site-footer__link"
+           href="#about">
+          پشتیبانی
+        </a>
+
+        <a class="site-footer__link"
+           href="#about">
+          قوانین
+        </a>
+
+        <a class="site-footer__link"
+           href="index.html">
+          ثبت‌نام
+        </a>
+      </nav>
+
+      <span class="site-footer__copyright">
+        © ۱۴۰۵
+      </span>
+
+    </div>
+  </footer>
+
+</body>
+</html>
